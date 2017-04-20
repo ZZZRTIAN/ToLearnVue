@@ -1,0 +1,12 @@
+body, html, div, p, a, input, label, span, h3, table, tr, td, header, footer, section, em, i, ul, li, dl, dt, dd, img, textarea,h3,h4,h1,h2,h5,h6,ol{ margin: 0; padding: 0; outline: none; font-family: "Arial", "Microsoft YaHei";}
+a { text-decoration: none; outline: none; font-size: 14px;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+ul, ul li, dl, dt, dd{ list-style: none; }
+*{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{ border: none; }
+
+.size1of2 {
+    width: 50%;
+}

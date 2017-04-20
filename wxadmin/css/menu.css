@@ -1,0 +1,9 @@
+.menu_setting_area{float: left;margin-right: 12px;position: relative;}
+
+.mobile_menu_preview{position: relative;width: 317px;height: 580px;background: transparent url(../images/bg_mobile_head_default.png) no-repeat 0 0;background-position: 0 0;border: 1px solid #e7e7eb;}
+.mobile_hd{color: #fff;text-align: center;padding-top: 30px;font-size: 16px;width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;margin: 0 30px;}
+.pre_menu_list{position: absolute;bottom: 0;left: 0;right: 0;border-top: 1px solid #e7e7eb;background: transparent url(../images/bg_mobile_foot_default.png) no-repeat 0 0;background-position: 0 0;background-repeat: no-repeat;padding-left: 43px;}
+.pre_menu_item {position: relative;float: left;line-height: 50px;text-align: center;}
+.pre_menu_item a {display: block;width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;color: #616161;text-decoration: none;}
+.pre_menu_link {border-left: 1px solid #e7e7eb;}
+.pre_menu_item .icon_menu_dot {background: url(../images/add.png) 0 -36px no-repeat;width: 7px;height: 7px;vertical-align: middle;display: inline-block;margin-right: 2px;margin-top: -2px;}
