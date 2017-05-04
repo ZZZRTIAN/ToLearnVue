@@ -16,6 +16,12 @@ var vm = new Vue({
 			var _this = this;
 			this.$http.get("data/menu.json").then(function(res){
 				_this.menuList = res.body.menu.button;
+				if(res.body.menu.button.length<3){
+					_this.menuList.isfmenuF = false; 
+				}
+				_this.menuList.forEach(function(item){
+					console.log(item);
+				});
 			})
 		},
 		addMenu:function(){
