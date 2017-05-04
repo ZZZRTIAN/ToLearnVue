@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微信后台</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/menu.css" />
+	</head>
+	<body>
+
+	<div class="menu_setting_area">
+		<div class="left"> 
+			<div class="preview">
+				<div class="hd">SpeechX</div>
+				<div>
+					<ul class="menu_list">
+						<li class="pre_menu_item size1of3" v-for="(item,index) in menuList">
+							<a class="pre_menu_link " href="javascript:void(0);">
+								<i class="icon_menu"></i>
+								<!--修改顺序-->
+								<i class=""></i>
+								<span>{{item.name}}</span>
+							</a>
+							<div class="title_box" v-if="item.sub_button.length>0">
+								<ul class="sub_pre_menu_list">
+									<li v-for="items in item.sub_button">
+										<a href="javascript:void(0);">
+											<span class="sub_pre_menu_inner ">
+												<!--修改顺序-->
+												<i></i>
+												<span>{{items.name}}</span>
+											</span>
+										</a>
+									</li>
+									<li class="addMenu" v-if="">
+										<a href="javascript:void(0);" @click="addChildMenu()">
+											<span class="sub_pre_menu_inner">
+												<i class="icon_menu_add"></i>
+											</span>
+										</a>
+									</li>
+								</ul>
+								<i class="arrow arrow_out"></i>
+								<i class="arrow arrow_in"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="menu_initial_tips" style="display: none;">点击左侧菜单进行编辑操作</div>
+			<div class="portable_editor to_left">
+				<div class="editor_inner">
+					<div>
+						<h1>菜单名称</h1>
+						<div>
+							<a href="#">删除菜单</a>
+						</div>
+					</div>
+					<div>
+						<div>已添加子菜单，仅可设置菜单名称。</div>
+						<div>
+							<label><strong>菜单名称</strong></label>
+							<div>
+								<span>
+									<input type="text" />
+								</span>
+								<p>字数超过上限</p>
+								<p>请输入菜单名称</p>
+								<p>字数不超过4个汉字或8个字母</p>
+							</div>
+						</div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<span class="editor_arrow_wrp">
+					<i class="editor_arrow editor_arrow_out"></i>
+					<i class="editor_arrow editor_arrow_in"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/lib/vue.min.js" ></script>
+	<script type="text/javascript" src="js/lib/vue-resource.min.js" ></script>
+	<script type="text/javascript" src="menu.js" ></script>
+	</body>
+</html>
